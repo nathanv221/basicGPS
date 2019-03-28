@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<HTML>
+    <HEAD>
+        <TITLE>
+            Math 5610 Semester Project.
+        </TITLE>
+        
+    </HEAD>
+    <BODY BGCOLOR=ffffff>
+        <P>
+            <IMG SRC="../../images/UUlogo.gif" ALIGN="LEFT" BORDER=2 HSPACE=10
+                VSPACE=10>
+        </P>
+        <H6>
+            <A HREF="http://www.math.utah.edu/">
+                Department of Mathematics
+            </A>
+            ---
+            <A HREF="http://www.science.utah.edu/">
+                College of Science
+            </A>
+            ---
+            <A HREF="http://www.utah.edu/HTML_Docs/UofU_Home.html">
+                University of Utah
+            </A>
+        </H6>
+
+
+
+
+
+
+<H1> Math 5610 Fall 2017 Term Project </H1>
+
+<H3>
+<a href="tp.pdf"> Click here for the pdf file of the term project assignment</a>
+</h3>
+
+From this page you can download the following files 
+for your use in our term project.  It is probably most convenient to download the first file and unzip it.
+But you can get the files individually, too.
+
+<OL>
+<li><a href="all.zip"> <b> A zip file containing all other files in this list</b></a></li>
+<li><a href="README"><b>README</b>:      do it!</a></li>
+<li><a href="vehicle.class"><b>vehicle.class</b>:      executable of my vehicle</a></li>
+<li><a href="receiver.class"><b>receiver.class</b>:     executable of my own receiver</a></li>
+<li><a href="satellite.class"><b>satellite.class</b>:    executable of my own satellite</a></li>
+<li><a href="angles.class"><b>angles.class</b>:    executable of my own angles class</a></li>
+<li><a href="data.dat"><b>data.dat</b>:     the data file</a></li>
+<li><a href="b12.dat"><b>b12.dat</b>:      trip to B12 in one step </a></li>
+<li><a href="b12t0.dat"><b>b12t0.dat</b>:    trip to b12 in one step, at time 0 </a></li>
+<li><a href="bm.dat"><b>bm.dat</b>:       trip to Black Mountain, in 90 steps </a></li>
+<li><a href="np.dat"><b>np.dat</b>:       a trip to the north pole in 15 steps </a></li>
+<li><a href="sp.dat"><b>sp.dat</b>:       a trip to the South Pole in 15 steps </a></li>
+<li><a href="o.dat"><b>o.dat</b>:        a trip to the point O in 9 steps </a></li>
+</OL>
+
+<BR>
+
+On a Unix system, with java installed, you can uses these programs by
+giving a command like:
+
+<pre>
+cat bm.dat | java vehicle | java satellite | java receiver  
+</pre>
+
+This command should produce output that is almost identical to the
+contents of the file <em>vehicle.dat</em> which is also produced by
+the above command.
+
+<BR>&nbsp;<BR>
+
+If all goes well you will be able to replace one or both of java
+satellite and java receiver with suitable commands that execute your
+own satellite or receiver.
+
+<BR>&nbsp;<BR>
+
+The file 'bm.dat' in the above command  can be replaced by any of the
+data files listed above in items 7 through 12.  You can also create your
+own data files.  They have the following contents (all numbers in one line, separated by blank spaces).
+
+<OL>
+<li> beginning time</li>
+<li> ending time</li>
+<li> number of steps of trip</li>
+<li> degrees latitude </li>
+<li> minutes latitude</li>
+<li> seconds latitude </li>
+<li> hemisphere (1 if Northern, -1 if Southern)</li>
+<li> degrees longitude </li>
+<li> minutes longitude</li>
+<li> seconds longitude</li>
+<li> hemisphere (1 if Eastern, -1 if Western)</li>
+<li> altitude of destination, in meters</li>
+</OL>
+
+This will generate a trip to the given position in the given number of
+steps, starting at the lamp post B12.
+
+<P>
+
+Here is a picture (with proper scale) of our GPS model:
+
+<IMG SRC = "http://www.math.utah.edu/~pa/GPS/GPS.gif">
+
+
+
+</body>
+</html>
